@@ -72,7 +72,7 @@ public class Main {
     public int calculateAverage(ArrayList<String> gradesList) {
         int sum = 0;
         for (String grade : gradesList) {
-            sum += Integer.parseInt(grade);
+            sum += Double.parseDouble(grade);
         }
         if (gradesList.size() > 0) {  
             return sum / gradesList.size();
